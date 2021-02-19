@@ -1,9 +1,5 @@
 # To The Moon!
 
-## Description
-
-THe ultimate group project that will take our WAM to the moon and beyond!
-
 ## Team Members
 
 - Sarah Tan z5166081
