@@ -4,6 +4,9 @@ import requests
 from datetime import date
 
 def save_json(company_name, region):
+    # need to put docstrings
+    # need to put extensive error checking
+    # possibly move to helper
     url = "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v3/get-historical-data"
     query_string = {"symbol": company_name, "region": region}
     headers = { 
@@ -13,8 +16,7 @@ def save_json(company_name, region):
 
     response = requests.request('GET', url, headers=headers, params=query_string)
 
-    with open(f'./{company_name}_{date.today().strftime("%Y%m%d")}.txt', 'w') as outfile:
-        json.dump(response.text, outfile)
-
+    with open(f'./{company_name}_{date.today().strftime("%Y%m%d")}.json', 'w') as outfile:
+        json.dump(json.loads(response.text), outfile)
 
 save_json(sys.argv[1], sys.argv[2])
