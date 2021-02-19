@@ -1,3 +1,4 @@
+import sys
 import json
 import pandas as pd
 
@@ -14,5 +15,5 @@ def json_to_dataframe(filename):
         data = json.load(infile)
         return pd.json_normalize(data['prices'])
 
-dataframe = json_to_dataframe('AMZN_20210219.json')
+dataframe = json_to_dataframe(sys.argv[1])
 print(dataframe.info)
