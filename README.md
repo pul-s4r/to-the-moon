@@ -1,4 +1,4 @@
-# to-the-moon
+# To The Moon!
 
 ## Description
 
