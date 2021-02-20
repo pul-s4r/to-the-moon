@@ -33,8 +33,7 @@
         - Results independent of user interaction, suitable for recommending items similar to user preferences. Avoids cold start problem
         - Requires significant differentiation between item properties to produce a good result
         - Overspecialisation - will recommend similar items only
-    - Knowledge-based ([example](https://towardsdatascience.com/recommendation-system-in-python-lightfm-61c85010ce17
-    - ))
+    - Knowledge-based ([example](https://towardsdatascience.com/recommendation-system-in-python-lightfm-61c85010ce17))
         - Suggests results with explicit user requirements, defines additional rules for correlation between item features and user requirements
         - Example rules: case based reasoning (recommends items most similar to the use case described by the user's profile)
         - Best suited to making precise, high-information predictions or where complex domain knowledge is required e.g. buying property. Avoids cold start problem problem. 
